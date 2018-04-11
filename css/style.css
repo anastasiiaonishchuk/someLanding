@@ -280,6 +280,46 @@ header {
         margin-top: -150px;
     }
 }
+@keyframes someAnimation {
+    12% {
+    transform: rotate(45deg);
+    background: #e4389c;
+    color: white;
+    }
+    25% {
+    transform: rotate(90deg);
+    background: #e4389c;
+    color: white;
+    }
+    37% {
+        transform: rotate(135deg);
+        background: #e4389c;
+        color: white;
+        }
+    50% {
+    transform: rotate(180deg);
+    background: #e4389c;
+    color: white;
+    }
+    62% {
+    transform: rotate(225deg);
+    background: #e4389c;
+    color: white;
+    }
+    75% {
+    transform: rotate(270deg);
+    background: #e4389c;
+    color: white;
+    }
+    87% {
+    transform: rotate(315deg);
+    background: #e4389c;
+    color: white;
+    }
+    100% {
+    transform: rotate(360deg);
+    }
+}
 .circle-icon{
     height: 100px;
     width: 100px;
@@ -292,10 +332,12 @@ header {
     font-size: 48px;
     font-family: 'Rubik';
     text-align: center;
+    transition: 2s;
 }
 .circle-icon:hover{
 background: #e4389c;
 color: white;
+animation: someAnimation 2s linear 1s;
 }
 
 
